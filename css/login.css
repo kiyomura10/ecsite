@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*******************************
+全体の設定
+********************************/
+article{
+
+	text-align: center;
+}
+
+.login_page1{
+	background-color:white;
+	width:60%;
+	height:auto;
+	margin-right:auto;
+	margin-left:auto;
+}
+.login_page{
+	padding: 0.5em 1em;
+    	margin: 2em 0;
+	font-weight: bold;
+    	background: #FFF;
+    	border: solid 3px var(--sub);/*線*/
+   	border-radius: 10px;/*角の丸み*/
+}
+/**************************
+会員登録
+*****************************/
+input.field-name,
+input.field-password{
+	width: 50%;
+	height: 28px;
+	border-radius: 14px;
+	padding: 10px;
+	text-align:center;
+
+}
+
+input#submit:focus {
+	background-color: var(--sub);
+	
+}
+input.field-name:hover,
+input.field-name:focus,
+input.field-password:hover,
+input.field-password:focus {
+	background-color: var(--sub);
+
+}
+input#submit{
+	border: none;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: var(--main);
+}
+input#submit:hover,input#submit:focus {
+	color:white;	
+	box-shadow: 3px 3px 5px rgba(100,100,100,0.6);
+}
+input#submit:active {
+	box-shadow: none;
+}
+
+/*********入力フォーム****************************/
+.inputArea {
+	margin-bottom: 20px;
+}
+.register_form{
+	margin-left:auto;
+	margin-right:auto;
+	width: 70%;
+}
+.adress{
+	height:30px;
+}
+.touroku_btn, .kaiin_btn[type="submit"] {
+	padding: 10px 40px;
+	border-radius: 20px;
+	background: var(--main);
+	color: yellow!important;
+	font-weight: bold!important;
+	text-shadow: 3px 3px 3px rgba(90,90,90,0.7);
+}
+/************************
+登録完了しました
+*************************/
+
+/************************
+登録完了ページ
+***************************/
+
+	

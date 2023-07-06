@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.main {
+	margin-left: 200px;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline;
+	text-decoration-color: var(--sub);
+	
+}
+.sub {
+	margin-left: 250px;
+}
+@media screen and (max-width:767px) {
+	.main {
+		margin-left: 50px;
+	}
+	.sub {
+		margin-left: 100px;
+		font-size: 16px;
+	}
+
+}

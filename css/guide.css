@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.guide_content{
+margin-left:50px;
+}
+.guide_block{
+	
+font-size:15px;
+}
+@media screen and (max-width:767px) {
+	.guide_content {
+		
+	}
+}

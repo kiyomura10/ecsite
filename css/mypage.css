@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.my_page {
+	margin-bottom: 30px;
+}
+.my_page form {
+	diplay: block;
+	margin: auto;
+    width: 600px;
+    height: auto;
+    border: 5px double var(--text);
+    background: var(--sub);
+}
+.my_page form p {
+	font-size: 15px;
+	margin: 30px 30px 30px 40px;
+}
+.my_page form p label.gender {
+	margin: 0 10px;
+}
+.my_page form p a {
+	margin: 0 35%;
+}
+.my_page form p input::-webkit-input-placeholder {
+	color: var(--text)!important;
+}
+.my_page form p input {
+	color: var(--main);
+}
+.my_page form p.long input {
+	width: 350px;
+}
+.my_page form p.change {
+	text-align: center;
+}
+.my_page form p.change input[type="submit"]  {
+	padding: 5px;
+	border: 3px outset var(--main);
+	border-radius: 10px;
+	color: var(--text);
+}
+.my_page form p.change input[type="submit"]:hover {
+	background: var(--main);
+	color: var(--base);
+}
+.my_page form p.home a {
+	text-align: center;
+	color: var(--main)!important;
+	font-weight: bold;
+}
+.my_page form p.home a:hover {
+	border-bottom: 2px solid var(--main);
+}
+article hr {
+	background: var(--sub);
+}

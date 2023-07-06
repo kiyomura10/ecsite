@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/****会社ロゴ*****/
+.footer_logo {
+	text-align: center;
+}
+.footer_logo img{
+	width: 300px;
+	height: auto;
+}
+.contact{ /**お問い合わせ***/
+	text-align: center;
+}
+.contact p{
+	font-family: 'M PLUS 1p', sans-serif;
+	font-size:20px;
+}
+ul.contact li:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f0a4"; /*アイコンの種類*/
+	color: #83D132;/*アイコン色*/
+	margin-right: 5px;
+}
+/***会社概要******/
+.footer_link{
+	display:flex;
+	justify-content: center;
+}
+.footer_link last-child{ 
+      border-right:1px solid black;
+   
+}
+
+.footer_link li {
+	margin-left: 10px;
+	margin-right: 10px;
+	border-right: 1px solid black;
+	padding-right: 10px;
+}
+.footer_link li:last-child{
+	border-right:none;	
+}
+
+/****SNS****/
+.sns-btn {
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+}
+.sns-btn img{
+	width: 30px;
+	height: auto;
+}
+.footer_sns {
+	justify-content: center;}
+.sns-btn li {
+	
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.footer_sns p{
+	text-align: center;
+	font-family: 'M PLUS 1p', sans-serif;
+	font-size:20px;
+	
+}			
+
+/****コピーライト*****/
+.footer_copyright{
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 3px 3px 3px rgba(90,90,90,0.7);
+	background-color: var(--main);	
+}

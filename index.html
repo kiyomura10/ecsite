@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HarmonicNatural　Webstore(ハーモニックナチュラル)</title>
+<!-- Reset -->
+<link href="css/reset.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<!--その他-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--↓パクってきたcssはこっち--> 
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/sample3c.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<!--UserStyle-->
+<link href="css/style.css" rel="stylesheet"><!--触るな！-->
+<link href="css/footer.css" rel="stylesheet"><!--触るな！-->
+<link href="css/header.css" rel="stylesheet"><!--触るな！-->
+<!--↓作成したcssを読み込んでください-->
+<link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+<!---------------ヘッダー↓--------------->
+<header>
+	<div class="headerInner">
+		<h1><a href="top.php"><img src="images/header/logo.png" alt="ハーモニックナチュラル"></a></h1>
+		<nav>
+			<ul class="nav_item">
+				<li><a href="category.php" ontouchstart>カテゴリ</a></li>
+				<li><a href="guide.php" ontouchstart>利用ガイド</a></li>
+				<li><a href="faq.php" ontouchstart>よくある質問</a></li>
+			</ul><!--nav_item-->
+			<ul class="nav_cart">
+			    <li class="registratuion"><a href="mypage.php"><img src="images/human.svg" alt="マイページ遷移のアイコン"></a></li>
+			    <li class="logout" <?php print($mes2) ?>><a href="logout.php"><img src="images/door-open.svg" alt="ログインページ遷移のアイコン"></a></li>
+			   	<li class="login" <?php print($mes1) ?>><a href="login.php"><img src="images/door-closed.svg" alt="ログインページ遷移のアイコン"></a></li>
+			    <li class="cart"><a href="cart.php"><img src="images/cart.svg" alt="カートページ遷移のアイコン"></a></li>
+			</ul><!--nav_icon-->
+		</nav>
+	</div><!--headerInner-->
+</header>
+<div class="triggerOuter">
+	<div class="trigger">
+		<div class="openbtn-area"><span></span><span></span><span></span></div>
+		</div>
+	</div>
+<div class="header_border">
+</div><!--ナビ下の帯部分-->
+
+<!---------------article↓--------------->
+<article>
+<div class="animation">
+<ul id="slideshow">
+	<li><img src="images/image32.jpg" alt="画像1"/></li>
+	<li><img src="images/image31.jpg" alt="画像2"/></li>
+	<li><img src="images/image30.jpg" alt="画像3"/></li>
+</ul>
+</div><!--animation終わり-->
+
+<!--JQueryライブラリの読み込み--> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!--全てのJQueryの命令はJQueryライブラリを読み込んだ後に記述する--> 
+<script src="js/slick.min.js"></script> 
+<!--スライドショーを実行させたいセレクタ（クラス名、ID名を記述して実行）--> 
+<script>
+$('#slideshow').slick({
+	autoplay:true,	//自動実行
+	autoplaySpeed:3500,	//画像が切り替わる時間
+	arrows:false
+//   slidesToShow:3,	//表示するスライドの数
+//   slidesToScroll:1	//一度にスクロールするスライドの数
+}); 
+</script>
+<div class="concept">
+	<p class="text">私たちは、<span style="color: var(--main)"><strong>お客様の健康</strong></span>と<span style="color: var(--main)"><strong>地球の未来</strong></span>を大切にしています。
+	<br>安心と品質にこだわり、持続可能な生活をサポートし、お客様の健康と地球のために、一緒にオーガニックの世界を探求しましょう。</p>
+</div><!--concept終わり-->
+
+<div class="look">
+	<p><a href="register.php"><strong>会員登録</strong>はこちら 》</a></p>
+</div><!--look終わり-->
+
+<div class="category">
+		<h2>PICK UP！</h2>
+</div><!--category終わり-->
+<div class="recommend">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-6">
+      	<a href="item.php?product_id= 4 ">
+        <p><img src="./images/e_04_img1.jpg" alt="" class="recoimg"></p>
+        <p>【商品名】</p> <p>フランス産バタービスケットレモン</p>
+        <p>【価格】</p>  <p>594円</p>
+        </a>
+      </div>
+      <div class="col-sm-3 col-6">
+      	<a href="item.php?product_id= 5 ">
+        <p><img src="./images/e_05_img1.jpg" alt="" class="recoimg"></p>
+        <p>【商品名】</p> <p>フランス産バタービスケットベリー</p>
+        <p>【価格】</p> <p>594円</p>
+        </a>
+      </div>
+      <div class="col-sm-3 col-6">
+      	<a href="item.php?product_id= 1 ">
+        <p><img src="./images/e_01_img1.jpg" alt="" class="recoimg"></p>
+        <p>【商品名】</p> <p>ムソーナチュラルタイベジタブルカレー</p>
+        <p>【価格】</p> <p>497円</p>
+        </a>
+      </div>
+      <div class="col-sm-3 col-6">
+      	<a href="item.php?product_id= 7 ">
+        <p><img src="./images/c_01_img1.jpg" alt="" class="recoimg"></p>
+        <p>【商品名】</p> <p>【ecostore】コンディショナー スムース</p>
+        <p>【価格】</p> <p>1078 円</p>
+        </a>
+      </div>
+       <div class="col-sm-3 col-6">
+       	<a href="item.php?product_id= 8 ">
+        <p><img src="./images/c_02_img1.jpg" alt="" class="recoimg"></p>
+        <p>【商品名】</p> <p>【おいせさん】お浄め塩スプレー</p>
+        <p>【価格】</p> <p>1100 円</p>
+        </a>
+      </div>
+      <div class="col-sm-3 col-6">
+      	<a href="item.php?product_id= 12 ">
+        <p><img src="./images/c_06_img1.jpg" alt="" class="recoimg"></p>
+        <p>【商品名】</p> <p>【nahrin】ハーブオイル33+7 ロールオン</p>
+        <p>【価格】</p> <p>2860円</p>
+        </a>
+      </div>
+      <div class="col-sm-3 col-6">
+      	<a href="item.php?product_id= 13 ">
+        <p><img src="./images/s_01_img1.jpg" alt="" class="recoimg"></p>
+        <p>【商品名】</p> <p>【だいじょうぶなもの】KAFU　MUZU</p>
+        <p>【価格】</p> <p>3240円</p>
+        </a>
+      </div>
+      <div class="col-sm-3 col-6">
+      <a href="item.php?product_id= 14 ">
+        <p><img src="./images/s_02_img1.jpg" alt="" class="recoimg"></p>
+        <p>【商品名】</p> <p>【Me Today】クランベリー 30000</p>
+        <p>【価格】</p> <p>4536円</p>
+        </a>
+      </div>
+    </div><!--row終わり-->
+  </div><!--container終わり-->
+</div><!--recommend終わり-->
+<br><br>
+
+<div class="look">
+	<p><a href="register.php"><strong>会員登録</strong>はこちら 》</a></p>
+</div><!--look終わり-->
+
+<div class="organic">
+	<h2>オーガニックとは</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7 col-12 organic_text">
+				<p>オーガニックは、化学合成物や遺伝子組み換えを排除し、自然な方法で栽培された食品や製品を指します。<br><br>
+				有機農法や有機認証基準に基づき、環境保護や動物福祉に配慮された生産が行われます。<br><br>
+				オーガニックの選択は、人々の健康と地球の持続可能性を考えた意識の表れであり、安心で栄養価の高い選択肢となっています。</p>
+			</div>
+			<div class="col-sm-5 col-12 organic_img">
+				<p><img src="images/image2.jpg"></p>
+			</div>
+		</div><!--row終わり-->
+	</div><!--container終わり-->
+</div><!--organic終わり-->
+
+<div class="column">
+	<h2>COLUMN</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 text-center"><a href="">
+				<p><img src="images/koramu1.jpg" alt="オーガニック農産物の栄養素解説"></p>
+				<p class="midasi">オーガニック農産物の栄養素解説</p>
+			</div></a>
+			<div class="col-sm-4 text-center"><a href="">
+				<p><img src="images/koramu2.jpg" alt="有機食品のメリットとは"></p>
+				<p class="midasi">有機食品のメリットとは</p>
+			</div></a>
+			<div class="col-sm-4 text-center"><a href="">
+				<p><img src="images/koramu3.jpg" alt="オーガニックライフスタイルの始め方"></p>
+				<p class="midasi">オーガニックライフスタイルの始め方</p>
+			</div></a>
+		</div><!--row終わり-->
+	</div><!--container終わり-->
+</div><!--column終わり-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+
+<!-- HTMLコード -->
+<a href="#" id="page_top">ページの先頭に戻る</a>
+
+
+<script src="sample.js"></script>
+
+
+<div class="look">
+	<p><a href="register.php"><strong>会員登録</strong>はこちら 》</a></p>
+</div><!--look終わり-->
+<br><br><br>
+<hr>
+</article>
+<!-- ボタン --> 
+<a href="#" id="page_top">ページの先頭に戻る</a>
+<!---------------フッター↓--------------->
+<footer>
+	<div class="footer_sns">
+		<p>公式SNS</p>
+			<ul class="sns-btn">
+				<li><a href="index.html"><img src="images/instagram.svg" alt="ダミーインスタ"></a></li>
+				<li><a href="index.html"><img src="images/facebook.svg" alt="ダミーフェイスブック"></a></li>
+				<li><a href="index.html"><img src="images/twitter.svg" alt="ダミーツイッター"></a></li>
+				<li><a href="index.html"><img src="images/line.svg" alt="ダミーライン"></a></li>	
+			</ul>
+	</div><!--footer_sns終わり-->
+	<div class="footer_logo">
+		<p><a href="top.php"><img src="images/header/logo.png" alt="ハーモニックナチュラル"></a></p>
+	</div><!--footer_logo終わり-->
+	<!--お問い合わせフォーム-->
+	<div class="contact">
+		<p>お問い合わせ</p>
+			<ul class="contact">
+				<li>TEL<a href="top.php"> 0120-55-6666</a></li>
+				<li>MAIL<a href="top.php"> usagisan@matsumoto</a></li>
+			</ul>
+	</div><!--contact終わり-->				
+			<ul class="footer_link">
+				<li><a href="company.php">会社概要</a></li>
+				<li><a href="guide.php">特定商取引法に基づく表示</a></li>
+				<li><a href="faq.php">個人情報取り扱い方針</a></li>
+				<li><a href="">お問い合わせ</a></li>
+			</ul>
+	<div class="footer_copyright"><small>Copyright &#169; 2023 Matsumoto Co.Ltd., All rights reserved.</small>
+	</div><!--footer_copyright終わり-->
+</footer><!--footer終わり-->
+<!----------------------------------->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+<!--UX Controls--> 
+<script src="js/scrollJudge.js"></script> 
+<script src="js/trigger.js"></script>
+<script src="js/totop.js"></script>
+<script src="js/smoothscroll.js"></script>
+</body>
+</html>

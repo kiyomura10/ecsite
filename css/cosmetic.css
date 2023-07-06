@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/********************************
+recommend画像
+********************************/
+.recommend .recoimg {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.category p{
+	font-size: 21px;
+	color: #262626;
+	text-align: center;
+}
+
+.category .cate{
+	width: 100%;
+	height: 60px;
+	padding: 10px 5px;
+	background-color: #ecf494;
+	border-radius: 30px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.category .cate a{
+	display:block;
+}
+
+.category .cate:hover, .category .cate:focus {
+	box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.6);
+}
+
+.category .cate:active {
+	box-shadow:  none;
+}
+
+.row{
+	padding: 50px 0 50px 0;
+}
